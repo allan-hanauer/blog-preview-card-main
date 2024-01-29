@@ -1,0 +1,111 @@
+@import url("https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  font-family: Figtree;
+  background-color: hsl(47, 88%, 63%);
+}
+
+main {
+  width: 383px;
+  height: 520px;
+  margin-top: 219px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  background-color: hsl(0, 0%, 100%);
+  color: hsl(0, 0%, 7%);
+  padding: 23px 24px;
+  border-radius: 16px;
+}
+main #illustration-img {
+  border-radius: 10px;
+}
+main .container__1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 82px;
+  border-radius: 5px;
+  height: 30px;
+  background-color: hsl(47, 88%, 63%);
+  color: hsl(0, 0%, 7%);
+  font-weight: 800;
+}
+main .profile {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+main .profile #profile-img {
+  width: 32px;
+  height: 33px;
+}
+main .profile #profile-name {
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+}
+
+.attribution p {
+  color: hsl(0, 0%, 100%);
+}
+.attribution a {
+  color: hsl(0, 0%, 7%);
+  text-decoration: none;
+}
+.attribution a:hover {
+  color: hsl(0, 0%, 50%);
+  transition: 0.5s;
+}
+
+.para-normal {
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.para-text {
+  color: hsl(0, 0%, 50%);
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 1.5rem;
+}
+
+.title {
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+}
+
+.m-1 {
+  margin-bottom: 13px;
+}
+
+.m-2 {
+  margin-bottom: 18px;
+}
+
+.m-3 {
+  margin-bottom: 15px;
+}
+
+.m-4 {
+  margin-bottom: 24px;
+}/*# sourceMappingURL=styles.css.map */

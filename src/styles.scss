@@ -1,0 +1,114 @@
+@import './sass/flex';
+@import './sass/colors';
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  @include flex($just:space-between);
+  width: 100vw;
+  height: 100vh;
+  font-family: Figtree;
+  background-color: $primary;
+}
+
+main {
+  width: 383px;
+  height: 520px;
+  margin-top: 219px;
+  @include flex($align:center, $just:space-between);
+  background-color: $second-one;
+  color: $second-three;
+  padding: 23px 24px;
+  border-radius: 16px;
+
+  #illustration-img {
+    border-radius: 10px;
+  }
+
+  .container__1 {
+    @include flex;
+    width: 82px;
+    border-radius: 5px;
+    height: 30px;
+    background-color: $primary;
+    color: $second-three;
+    font-weight: 800;
+  }
+
+  .profile {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+
+    #profile-img {
+      width: 32px;
+      height: 33px;
+    }
+
+    #profile-name {
+      font-size: 0.875rem;
+      font-style: normal;
+      font-weight: 800;
+      line-height: normal;
+    }
+  }
+}
+
+.attribution {
+  p {
+    color: $second-one;
+  }
+
+  a {
+    color: $second-three;
+    text-decoration: none;
+  }
+
+  a:hover {
+    color: $second-two;
+    transition: 0.5s;
+  }
+}
+
+.para-normal {
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.para-text {
+  color: $second-two;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 1.5rem;
+}
+
+.title {
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+}
+
+.m-1 {
+  margin-bottom: 13px;
+}
+
+.m-2 {
+  margin-bottom: 18px;
+}
+
+.m-3 {
+  margin-bottom: 15px;
+}
+
+.m-4 {
+  margin-bottom: 24px;
+}
