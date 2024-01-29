@@ -20,6 +20,8 @@ main {
   width: 383px;
   height: 520px;
   margin-top: 219px;
+  border: 1px solid $second-three;
+  box-shadow: 10px 5px 0px 4px #000;
   @include flex($align:center, $just:space-between);
   background-color: $second-one;
   color: $second-three;
