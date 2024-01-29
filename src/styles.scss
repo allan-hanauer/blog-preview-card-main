@@ -21,7 +21,7 @@ main {
   height: 520px;
   margin-top: 219px;
   border: 1px solid $second-three;
-  box-shadow: 10px 5px 0px 4px #000;
+  box-shadow: 5px 5px 0px 6px #000;
   @include flex($align:center, $just:space-between);
   background-color: $second-one;
   color: $second-three;
@@ -97,6 +97,11 @@ main {
   font-style: normal;
   font-weight: 800;
   line-height: normal;
+}
+.title:hover{
+  color: $primary;
+  transition: 0.5s;
+  transform: translateY(-3px);
 }
 
 .m-1 {
