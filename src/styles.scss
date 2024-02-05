@@ -1,6 +1,6 @@
-@import './sass/flex';
-@import './sass/colors';
-@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap');
+@import "./sass/flex";
+@import "./sass/colors";
+@import url("https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap");
 
 * {
   padding: 0;
@@ -9,7 +9,7 @@
 }
 
 body {
-  @include flex($just:space-between);
+  @include flex($just: space-between);
   width: 100vw;
   height: 100vh;
   font-family: Figtree;
@@ -22,10 +22,11 @@ main {
   margin-top: 219px;
   border: 1px solid $second-three;
   box-shadow: 5px 5px 0px 6px #000;
-  @include flex($align:center, $just:space-between);
+  @include flex($align: center, $just: space-between);
   background-color: $second-one;
   color: $second-three;
   padding: 23px 24px;
+  animation: up 2s ease-out;
   border-radius: 16px;
 
   #illustration-img {
@@ -34,6 +35,7 @@ main {
 
   .container__1 {
     @include flex;
+    animation: up 1s ease-out;
     width: 82px;
     border-radius: 5px;
     height: 30px;
@@ -98,10 +100,21 @@ main {
   font-weight: 800;
   line-height: normal;
 }
-.title:hover{
+.title:hover {
   color: $primary;
   transition: 0.5s;
   transform: translateY(-3px);
+}
+@keyframes up {
+  0% {
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 .m-1 {

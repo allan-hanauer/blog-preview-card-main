@@ -29,6 +29,7 @@ main {
   background-color: hsl(0, 0%, 100%);
   color: hsl(0, 0%, 7%);
   padding: 23px 24px;
+  animation: up 2s ease-out;
   border-radius: 16px;
 }
 main #illustration-img {
@@ -39,6 +40,7 @@ main .container__1 {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  animation: up 1s ease-out;
   width: 82px;
   border-radius: 5px;
   height: 30px;
@@ -102,6 +104,16 @@ main .profile #profile-name {
   transform: translateY(-3px);
 }
 
+@keyframes up {
+  0% {
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 .m-1 {
   margin-bottom: 13px;
 }
